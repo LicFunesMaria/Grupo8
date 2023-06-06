@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"LOCOS POR LOS CUPCAKES"</title>
+    <link rel="shortcut icon" href="iconocupcake.png">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Ribeye&family=Vast+Shadow&display=swap" rel="stylesheet">
+        <style>
+
+     
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #BA55D3;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: inline-block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover {
+              background-color:hotpink;
+            }
+            .active {
+              background-color: rgb(252, 28, 166);
+            }
+           
+            
+            </style>
+       
+    </head>
+    <body>
+        <ul>
+            <li><a href="Index.html">HOME</a></li>
+             <li><a href="pie.html">GALERIA</a></li>
+            <li style="float: right;" ><a href="contacto.html"class="active">CONTACTO</a><li>
+            </ul>    
+       
+        <br>
+        <br>
+       
+        
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label for="firstame">Nombre:</label>
+            <input size="30" type="text" name="firstame" placeholder="Escriba aqui..">
+            <label for="lastname">Apellido:</label>
+            <input size="30" type="text" name="lastname" placeholder="Escriba aqui..">
+            <br><br>
+            <label for="street">Direccion:</label>
+            <input type="text" name="address" placeholder="Escriba aqui...">
+            <label for="city">Ciudad:</label>
+            <input type="text" name="city" value="C.A.B.A">
+            <label for="zipcode">C.P:</label>
+            <input type="text" name="zipcode" placeholder="Escriba aqui...">
+            <br><br>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" placeholder="Escriba aqui..">
+            <label for="mail">Mail:</label>
+            <input type="text" name="mail" placeholder="Escriba aqui...">
+            <br><br>
+            
+    
+        </fieldset>
+        <div>
+        <label for="tipo">Tipo de comentarios:</label>
+        <select id="tipo" name="tipo">
+            <option value="sugerencias">Sugerencias</option>
+            <option value="reclamo">Reclamos</option>
+            <option value="otros">Otros</option>
+        </select>
+        <br><br>
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea name="tipo" rows="5" cols="60"></textarea>
+        <br><br>
+        <button class="btn" onclick="validateForm()" type="submit"svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span id="validar>">ENVIAR</span></button>
+          <script>
+            
+            function validateForm()
+            {
+                 alert("Mensaje enviado");
+            }
+          </script>
+            
+        </div>
+      <br><br>
+      
+      <footer style="background-color: hotpink; text-align: center;">Derechos reservados 2023</footer>
+    </body>
+</html>    

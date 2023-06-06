@@ -1,0 +1,18 @@
+body{
+	background-image: url(cca.jpg);
+	opacity: 0,5;
+	background-repeat: repeat;
+	backdrop-filter: blur(5px);
+}
+*{
+	font-family: 'Concert One';
+	font-size: x-large;
+
+}
+h2{
+	font-size: xx-large;
+	color: rgb(76, 40, 130);
+}
+h4{
+	font-size: x-large;
+}

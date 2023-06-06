@@ -1,0 +1,111 @@
+.container{
+	display: grid; 
+	grid-template: 130px 3fr 130px / 400px 2fr;
+	grid-template-areas: "header header" 
+                         "left contenido" 
+                         "footer footer";
+	grid-gap: 20px;
+	height: 100vh;
+
+}
+.header{
+	grid-area: header;
+	
+}
+.left{
+	grid-area: left;
+	
+    
+}
+.contenido{
+    
+	grid-area: contenido;
+	
+	
+	
+	
+}
+.footer{
+	grid-area: footer;
+	
+}
+.item{
+	
+	padding: 10px;
+	color: black;
+	border-radius: 10px;
+	box-shadow: 10%;
+		
+	
+}
+body{
+	background-image: url(cca.jpg);
+	opacity: 0,5;
+	background-repeat: repeat;
+	backdrop-filter: blur(5px);
+}
+*{
+	font-family: 'Concert One';
+	font-size: x-large;
+
+}
+
+/*.slider-container{
+	display: flex;
+	height: 50%;
+	text-align: center;
+	margin-left: 300px;
+	margin-right: 200px;
+	padding-left: 100px;
+	padding-right: 100px;
+	
+		
+
+}
+body{
+	background-image: url(cca.jpg);
+	background-repeat: repeat;
+	backdrop-filter: blur(5px);
+}*/
+.button {
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+  
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.button:hover span {
+	padding-right: 25px;
+}
+  
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+h1{
+	font-size: xx-large;
+	color: rgb(248, 40, 238);
+}
