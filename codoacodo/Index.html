@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"LOCOS POR LOS CUPCAKES"</title>
+    <link rel="shortcut icon" href="iconocupcake.png">
+    <link rel="stylesheet" href="css/indexestilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Ribeye&family=Vast+Shadow&display=swap" rel="stylesheet">
+   
+    <style>
+
+     
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #BA55D3;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color:hotpink;
+      }
+      .active {
+        background-color:rgb(252, 28, 166);
+      }
+      </style>
+   </head>
+   
+    <body>
+      <section class="container">
+        <div class="item header">
+      <ul>
+        <li><a href="Index.html">HOME</a></li>
+         <li><a href="pie.html">GALERIA</a></li>
+        <li style="float: right;"><a href="contacto.html"class="active">CONTACTO</a><li>
+        </ul> 
+        <h1 style="text-align: center;"><img src="LOCOS POR LOS CUPCAKES.png" width="700" height="40"></h1>
+        <br>
+        <br><br>
+        </div>
+        <div class="item left">
+        
+     <br>
+     <div class="slider-container">
+      <img class="slider-item" src="pastelitos.jpg"style="width: 100%">
+      <img class="slider-item" src="cupcakes1.jpg" style="width: 100%">
+      <img class="slider-item" src="paste.jpg" style="width: 100%">
+    </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slider-item");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000);    
+        }
+        </script>
+     
+     <br>
+      </div>
+      <div class="item contenido">
+        <p>Un cupcake, también conocido como patty cake o fairy cake, es una pequeña tarta individual que se cocina frecuentemente en moldes similares a los empleados para hacer muffins o magdalenas. Antes de que existieran estos moldes, se solían hacer en tazones, ramequines o cazuelas de barro, dándole significado a su nombre en inglés. La receta clásica de cualquier cupcake es similar a la de una tarta: mantequilla, harina, levadura, huevos y azúcar; y debido a su reducido tamaño, cuenta con una cocción mucho más rápida que la de una tarta común. Al ser servido como un postre, es común encontrarlas en celebraciones de fiestas infantiles y cumpleaños. La decoración habitual para estas ocasiones es una crema de mantequilla a la que se le añade color y sabor para lograr que el cupcake sea aún más vistoso y apetecible.</p>
+        <br>  
+     </div>
+     <br>
+    
+     <div class="item footer">
+     <a href="recetas.html"><button class="button"><span>RECETAS</span></button></a>
+     
+     </p>
+    
+    <footer style="background-color: rgb(235, 75, 160); text-align: center;">Derechos reservados 2023</footer>
+     </div>
+   </section>
+   
+
+    </body> 
+</html> 
