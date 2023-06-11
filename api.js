@@ -1,4 +1,4 @@
-
+const API_KEY= ' fs0I9APZ2MSKcgvwZogu33sczFSgkVgjLTkFwaqsy3wGpAqjlYOMojhu '
 import { createClient } from 'pexels';
 
 const client = createClient('fs0I9APZ2MSKcgvwZogu33sczFSgkVgjLTkFwaqsy3wGpAqjlYOMojhu');
